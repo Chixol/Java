@@ -30,7 +30,7 @@ public class UserRepositoryImplement implements UserRepository {
 	}
 	
 	@Override
-	public boolean existsById(String id) throws SQLException {
+	public boolean existsById(String id) throws SQLException { // service로 받은 DTO를 DB에서 자료를 받아서 처리
 		
 		boolean result = false;
 		
@@ -42,7 +42,6 @@ public class UserRepositoryImplement implements UserRepository {
 			ResultSet resultSet = preparedStatement.executeQuery();
 			result = resultSet.next();
 			
-		
 		return false;
 	}
 

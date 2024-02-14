@@ -12,7 +12,7 @@ public class CheckidRequestDto {
 		this.id = id;
 	}
 	
-	public boolean validId() {
+	public boolean validId() { //반환
 		boolean valid = id.length() <= 20;
 		return valid;
 	}

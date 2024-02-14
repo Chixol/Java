@@ -1,0 +1,50 @@
+package com.hyungwoo.realEstate.service.implement;
+
+import com.hyungwoo.realEstate.Interfaces.Code;
+import com.hyungwoo.realEstate.dto.request.CheckidRequestDto;
+import com.hyungwoo.realEstate.dto.request.SendCodeRequestDto;
+import com.hyungwoo.realEstate.dto.response.CheckIdResponseDto;
+import com.hyungwoo.realEstate.dto.response.SendCodeResponseDto;
+import com.hyungwoo.realEstate.repository.UserRepository;
+import com.hyungwoo.realEstate.repository.implement.UserRepositoryImplement;
+import com.hyungwoo.realEstate.service.AuthService;
+
+public class AuthServiceImplement implements AuthService {
+
+	private UserRepository userRepository;
+	
+	public AuthServiceImplement (UserRepository userRepository) {
+		this.userRepository = userRepository;
+	}
+
+	
+	@Override
+	public CheckIdResponseDto checkId(CheckidRequestDto dto) { // controller에서 넘어온 DTO를 Service에서 처리하기 위해 받음
+		
+		CheckIdResponseDto result = new CheckIdResponseDto();
+		
+		try {
+			
+			String id = dto.getId();
+			
+			boolean existedId = userRepository.existsById(id);
+			
+			if (existedId) result.setCode(Code.DI);
+			else result.setCode(Code.SU);
+			
+		} catch (Exception exception) {
+			exception.printStackTrace();
+			result.setCode(Code.DBE);
+		}
+		
+		return result;
+	}
+
+
+	@Override
+	public SendCodeResponseDto sendCode(SendCodeRequestDto dto) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
