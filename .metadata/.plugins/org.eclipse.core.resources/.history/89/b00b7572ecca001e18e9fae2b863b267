@@ -1,0 +1,19 @@
+package com.hyungwoo.realEstate.repository.implement;
+
+import java.sql.Connection;
+
+import com.hyungwoo.realEstate.repository.UserRepository;
+
+public class UserRepositoryImplement implements UserRepository {
+
+	private Connection connection;
+	
+	@Override
+	public boolean existsById(String id) {
+		
+		
+		
+		return false;
+	}
+
+}

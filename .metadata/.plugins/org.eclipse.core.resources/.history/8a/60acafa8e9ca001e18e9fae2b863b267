@@ -1,0 +1,15 @@
+package com.hyungwoo.realEstate.controller.implement;
+
+import com.hyungwoo.realEstate.controller.AuthController;
+import com.hyungwoo.realEstate.dto.request.CheckidRequestDto;
+import com.hyungwoo.realEstate.dto.response.CheckIdResponseDto;
+
+public class AuthControllerImplement implements AuthController {
+
+	@Override
+	public CheckIdResponseDto checkId(CheckidRequestDto request) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

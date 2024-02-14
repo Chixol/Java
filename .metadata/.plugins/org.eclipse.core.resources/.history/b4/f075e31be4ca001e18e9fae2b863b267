@@ -1,0 +1,5 @@
+package com.hyungwoo.realEstate.controller;
+
+public interface AuthController {
+
+}

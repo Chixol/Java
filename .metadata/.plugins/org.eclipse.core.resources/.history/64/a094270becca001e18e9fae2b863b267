@@ -1,0 +1,13 @@
+package com.hyungwoo.realEstate.repository.implement;
+
+import com.hyungwoo.realEstate.repository.UserRepository;
+
+public class UserRepositoryImplement implements UserRepository {
+
+	@Override
+	public boolean existsById(String id) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

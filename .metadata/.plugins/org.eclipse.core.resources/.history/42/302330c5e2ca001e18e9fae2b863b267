@@ -1,0 +1,5 @@
+package com.hyungwoo.realEstate.Interfaces;
+
+public enum Code {
+
+}

@@ -1,0 +1,5 @@
+package com.hyungwoo.realEstate.service;
+
+public interface AuthService {
+
+}

@@ -1,0 +1,32 @@
+package com.hyungwoo.realEstate.repository.implement;
+
+import java.sql.Connection;
+
+import com.hyungwoo.realEstate.repository.UserRepository;
+
+public class UserRepositoryImplement implements UserRepository {
+
+	private Connection connection;
+	
+	public UserRepositoryImplement () {
+		
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			
+			final String URL = "jdbc:mysql://127.0.0.1:3306/real_estate";
+			
+		} catch (Exception exception) {
+			
+		}
+		
+	}
+	
+	@Override
+	public boolean existsById(String id) {
+		
+		
+		
+		return false;
+	}
+
+}
