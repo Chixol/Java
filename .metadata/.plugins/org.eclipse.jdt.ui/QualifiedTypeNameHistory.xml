@@ -13,7 +13,6 @@
     <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="ch03.SubClass"/>
     <fullyQualifiedTypeName name="ch03.MyClass"/>
-    <fullyQualifiedTypeName name="java.util.Random"/>
     <fullyQualifiedTypeName name="java.util.Set"/>
     <fullyQualifiedTypeName name="java.util.HashSet"/>
     <fullyQualifiedTypeName name="java.util.TreeSet"/>
@@ -27,4 +26,23 @@
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="com.hyungwoo.realEstate.controller.AuthController"/>
+    <fullyQualifiedTypeName name="com.hyungwoo.realEstate.controller.implement.AuthControllerImplement"/>
+    <fullyQualifiedTypeName name="com.hyungwoo.realEstate.service.AuthService"/>
+    <fullyQualifiedTypeName name="com.hyungwoo.realEstate.repository.UserRepository"/>
+    <fullyQualifiedTypeName name="com.hyungwoo.realEstate.service.implement.AuthServiceImplement"/>
+    <fullyQualifiedTypeName name="com.hyungwoo.realEstate.Interfaces.Code"/>
+    <fullyQualifiedTypeName name="com.hyungwoo.realEstate.dto.response.CheckIdResponseDto"/>
+    <fullyQualifiedTypeName name="com.hyungwoo.realEstate.dto.request.CheckidRequestDto"/>
+    <fullyQualifiedTypeName name="com.hyungwoo.realEstate.repository.implement.UserRepositoryImplement"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="java.sql.DriverManager"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="java.sql.SQLException"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="com.hyungwoo.realEstate.repository.EmailAuthenticationRepository"/>
+    <fullyQualifiedTypeName name="com.hyungwoo.realEstate.repository.implement.EmailAuthenticationRepositoryImplement"/>
+    <fullyQualifiedTypeName name="com.hyungwoo.realEstate.dto.request.SendCodeRequestDto"/>
+    <fullyQualifiedTypeName name="com.hyungwoo.realEstate.dto.response.SendCodeResponseDto"/>
 </qualifiedTypeNameHistroy>
